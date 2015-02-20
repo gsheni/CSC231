@@ -29,6 +29,8 @@ median3(TUPLE) ->
 			B;
 		A == B  andalso B == C ->
 			B;
+		A == C  andalso C > B  ->
+			A;
 		A == B  andalso B > C ->
 			A;
 		B == C  andalso B > A ->
@@ -82,4 +84,3 @@ contains(D,L) ->
 			contains(D,tl(L))
 	end.
 	
-
