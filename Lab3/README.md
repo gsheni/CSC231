@@ -53,7 +53,7 @@ Machine 6:
 
 A machine that accepts all odd numbers in binary with no leading 0s (the binary encodings of 1,3,5,7,9,11,13,15,….) 
 
-\![alt text](http://i.imgur.com/uZGgNBK.png?1 "Machine 6")
+\![alt text](http://i.imgur.com/07OFGbP.png?1 "Machine 6")
 
 Machine 7:
 =======
