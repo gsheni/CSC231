@@ -51,13 +51,13 @@ A machine that accepts the following standard comparison operators: <, >, <=, >=
 Machine 6:
 =======
 
-6- A machine that accepts all odd numbers in binary with no leading 0s (the binary encodings of 1,3,5,7,9,11,13,15,….) 
+A machine that accepts all odd numbers in binary with no leading 0s (the binary encodings of 1,3,5,7,9,11,13,15,….) 
 
-\![alt text](http://i.imgur.com/uZGgNBK.png?1 "Machine 1")
+\![alt text](http://i.imgur.com/uZGgNBK.png?1 "Machine 6")
 
 Machine 7:
 =======
 
-7- A machine that accepts words with both an even number of 0s and an even number of 1s, over the alphabet {0,1}. Having zero of a number is considered even. 
+A machine that accepts words with both an even number of 0s and an even number of 1s, over the alphabet {0,1}. Having zero of a number is considered even. 
 
-\![alt text](http://i.imgur.com/p3zE9yd.png?2 "Machine 1")
+\![alt text](http://i.imgur.com/p3zE9yd.png?2 "Machine 7")
