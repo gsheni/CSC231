@@ -46,7 +46,7 @@ Machine 5:
 
 A machine that accepts the following standard comparison operators: <, >, <=, >=, !=, == 
 
-\![alt text](http://i.imgur.com/uZGgNBK.png?1 "Machine 5")
+\![alt text](http://i.imgur.com/c3KE4hX.png?1 "Machine 5")
 
 Machine 6:
 =======
