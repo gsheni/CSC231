@@ -30,14 +30,14 @@ A machine that accepts all valid times in military times (0000 to 2359).
 Machine 3:
 =======
 
-A machine that accepts all values 2i for i >= 0 in binary (over the alphabet {0,1}), with no leading 0s (i.e., the binary encodings of 1,2,4,8,16,…)
+A machine that accepts all values 2<sup>i</sup> for i >= 0 in binary (over the alphabet {0,1}), with no leading 0s (i.e., the binary encodings of 1,2,4,8,16,…)
 
 \![alt text](http://i.imgur.com/p9hiScT.png?1 "Machine 3")
 
 Machine 4:
 =======
 
-A machine that accepts all values (2i -1) for i >= 1 in binary (over the alphabet {0,1}), with no leading 0s (i.e., the binary encodings of (1,3,7,15,…)) 
+A machine that accepts all values (2<sup>i</sup> -1) for i >= 1 in binary (over the alphabet {0,1}), with no leading 0s (i.e., the binary encodings of (1,3,7,15,…)) 
 
 \![alt text](http://i.imgur.com/PehS1jV.png?1 "Machine 4")
 
