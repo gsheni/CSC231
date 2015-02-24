@@ -1,0 +1,62 @@
+Gaurav Sheni
+CSC 231
+2/22/15
+Lab 6 Documentation
+
+1. productOfPairs([X|XS]) -
+        This should get the product so the main function call takes the head of the list, and multiples it by the 2nd element (the head of the tail). The product is appended with the product of the next two pairs.
+        There is two special situations. One is that there is an empty list, in which case the result is also the empty list. The other is that there is one element in the list, in which case the product is just that one element.
+
+2a polyadd([X|XS],[Y|YS]) -
+        This should do add two polynomials so just take the heads of the two list and add them together, and do that for each position. Position meaning the 1st in both lists, the 2nd in both lists, and so on. Recursively call with the tails of the list remaining.
+        There is three special situations. One is the adding the empty set to the empty set, which is just the empty set.
+        Another one is if one set contains one element. This just results in the one element. However, there must be two functions because the first or the second set could be empty.
+        The other situation is if one set is empty, and another set contains more than one element. This results in just that one set. Again, there is two function calls.
+
+2b polydiff([X|XS],[Y|YS]) -
+        This should just subtract Y from X. This means we need to take the head of the second list and subtract it from the head of the second list. Recursively call with the tails of the list remaining.
+        There is three special situations. One is the empty set subtraction, which should return the empty set.
+        Another is if a list has one item and the other list has
+
+2c polyeval([X|XS],Y) -
+        This should use Horner's Rule for Polynomials. This basically says a polynomial can be broken down into "a0 + x(a1 + x(a2+x(...))).) This just says multiple the x by the stuff to be evaluated inside and add it to a. Therefore, first it evaluates the most inner stuff with recursive calling. It then adds it to X.
+        There is one special situation, which would be for the empty input polynomial, which according to the directions , should be 0.
+
+3a member(X,[X|_])
+        Trying to find an element in the list would easier if it was explicit. Therefore, first it looks to see if the head of the list is the element being searched.
+        If it is, then return true. If its not, then keep looking by removing the head and looking in the tail, since the head was already check. This is for the line "member(X,[X|_])->    member(X,Y)."
+        It also says that if list is empty, then return a false, since it either doesn't contain the item, or its an empty list, in which case it doesn't contain anything to check (even an empty element check).
+
+3b delete(X,S)
+        This first checks if the item to be deleted is in the set, using local variables. If it is there, then look for it. If its not, then return the list unchanged.
+        It searches for the list by check the head each time, the recursively calling until it finds the match.
+        There is one special situation, and that is with the empty set. This doesn't remove anything, since there is nothing to be removed and thus returns an empty set.
+
+3c insert(X,S)
+        This first checks if the item is in the set, using local variables.
+        If it is, then don't add it to the set, and return set unchanged.
+        If it is not, then return the set with the new element appended.
+
+4 largest(L)
+        This was trivial and all I need to do was create two variables. T and H. T is the tail of the list, and H is the head of the list. Everywhere there was a tl(L), it was replaced with T. Everywhere there was a hd(L), this was replaced with a H. The local variables were defined in the beginning of the function.
+
+5 selectionSort(X)
+        Based off the handout, it said to find the largest element, delete that element from the list, and add the largest to the front of the list, and recursively sort everything but the largest.
+        I used the largest function to find the largest. I used the delete function delete the element. The recursive call was easy since all that needed to be done was to add largest to the head of the list and sort the rest of the list, with the largest gone. This was done using local variables.
+
+6a
+        flipSign(N)
+                To flip the sign of a number, simply subtract it from 0. If its positive it will become negative, 0-6=-6, and if its negative it will become positive 0--6=6.
+
+        flipSigns(L)
+                This was based of the function in the handout. It uses the map function to take each element in the list and calls the flipSign worker function with that element. It does that for the whole list.  
+
+6b
+        truncateWord(L)
+                This first checks if the length of the list is is smaller than 5, if it then no need to truncate and can just return the list as is.
+                If its not, then use the chop function which just keeps grabbing the head of the current list and then recursively passing the tail (while subtracting S by 1). It concatenates the answer.
+
+        truncateWords(L)
+                This was based of the function in the handout. It uses the map  function to take each string in each element in the list and calls the truncate worker function. 
+
+
