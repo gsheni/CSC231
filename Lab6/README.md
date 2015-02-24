@@ -1,17 +1,10 @@
 # Lab 6
 
-<b>Author:</b> Grant McGovern 
+<b>Author:</b> Gaurav Sheni 
 
 <b>Date:</b> 24 Feb 2015 
 
 <b>Description:</b> Introduction to Erlang lab.
-
-
-Note: Wrote in an .md (markdown file to comply with Github README standards)
-
-URL: https://github.com/g12mcgov/CSC231/tree/master/Lab6
-
-
 
 Part 1a:
 =======
